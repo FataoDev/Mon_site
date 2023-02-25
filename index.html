@@ -1,77 +1,61 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <title>Ovision</title>
+  <title>Mon site</title>
 </head>
 <body>
-  <nav>
-    <div><img src="/logo.png" width="50"></div>
-    <ul>
-      <li><a href="/">Accueil</a></li>
-      <li><a href="/about">À propos</a></li>
-      <li>
-        <a href="/services">Services</a>
-        <ul>
-          <li><a href="/services/graphisme">Graphisme</a></li>
-          <li><a href="/services/marketing">Marketing digital</a></li>
-          <li><a href="/services/facebook">Gestion de pages Facebook</a></li>
-          <li><a href="/services/maintenance">Maintenance électronique</a></li>
-        </ul>
-      </li>
-      <li><a href="/account">Mon compte</a>
-        <ul>
-          <li><button id="inscription-btn">Inscription</button></li>
-          <li><button id="connexion-btn">Connexion</button></li>        </ul>
-      </li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-  </nav>
-
-<!-- Popup d'inscription -->
-<div id="inscription-popup" class="popup">
-  <div class="popup-content">
-    <span class="close">&times;</span>
-    <h2>Inscription</h2>
-    <form>
-      <label for="nom">Nom :</label>
-      <input type="text" id="nom" name="nom">
-
-      <label for="prenom">Prénom :</label>
-      <input type="text" id="prenom" name="prenom">
-
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email">
-
-      <label for="password">Mot de passe :</label>
-      <input type="password" id="password" name="password">
-
-      <input type="submit" value="S'inscrire">
-    </form>
-  </div>
+  <header>
+    <div class="nav-bar">
+      <ul>
+        <li class="logo"><a href="#">OVISION</a></li>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="rechercher">
+          <input type="text" name="Rechercher" placeholder="Rechercher">
+          <button>Rechercher</button>
+        </li>
+        <li class="disposit-btn">
+          <button class="btn" id="Inscription">Inscription</button>
+          <button class="btn">Connection</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="body-comp">
+    <div class="competence">
+      <div>Web Design & <br> <span>Mobile Developper</span></div>
+      <p>Développement d'application et de site web et mobile. <br>Web Design et Design graphique </p>
+      <div  class="bt-join"><button>NOUS JOINDRE</button></div>
+    </div>
+    <div class="form" id="form">
+      <form action="">
+        <div class="connect-here">Connecter Ici</div>
+        <div class="donne-form">
+          <input type="text" placeholder="Entrer votre email ici">
+          <input type="password" placeholder="Entrer votre mot de passe">
+          <button type="submit">Connecter</button>
+        </div>
+        <div class="no-compte">
+            <span>Pas de compte ? </span>
+            <a href="#">Inscrivez vous ici</a>
+        </div>
+        <div class="connect-avec">Connecter avec</div>
+        <div class="link-connect">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+      </form>
+    </div>
 </div>
-
-<!-- Popup de connexion -->
-<div id="connexion-popup" class="popup">
-  <div class="popup-content">
-    <span class="close">&times;</span>
-    <h2>Connexion</h2>
-    <form>
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email">
-
-      <label for="password">Mot de passe :</label>
-      <input type="password" id="password" name="password">
-
-      <input type="submit" value="Se connecter">
-    </form>
-  </div>
-</div>
-
-
 </body>
 </html>

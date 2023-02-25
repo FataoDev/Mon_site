@@ -1,86 +1,209 @@
-nav, nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  nav li {
-    padding: 1rem;
-    position: relative;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  nav ul ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s ease;
-  }
-  
-  nav ul ul li {
-    width: 100%;
-  }
-  
-  nav li:hover > ul {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  nav ul ul a:hover {
-    color: #fff;
-    background-color: #333;
-  }
-  
-  /* Style pour le bouton d'ouverture du popup */
-button {
-  background-color: #555;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-/* Style pour les popups */
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
+body{
+  background-size:contain;
+  margin: 0;
+  padding: 0;
+  position: relative;
   width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.popup-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 30%;
+header{
+  display: flex;
+  width: 100%;
+  position: relative;
 }
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.nav-bar ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  text-align: right;
+} 
+.logo{
+  margin-right: 40px;
+} 
+.nav-bar ul li{
+  list-style: none;
+  padding: 5px;
 }
-
-.close:hover,
-.close:focus {
-  color: #000;
+.nav-bar ul li a{
+  font-weight: 600;
+  color: white;
   text-decoration: none;
-  cursor: pointer;
 }
+.nav-bar .logo a{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5em;
+  color: rgb(252, 91, 4);
+
+}
+.nav-bar ul li.disposit-btn{
+  display: block;
+}
+.nav-bar ul li .btn{
+  padding-left: 4px; padding-right: 4px;
+  padding-top: 2px; padding-bottom: 2px;
+  border-radius: 5px;
+  font-size: 0.2em;
+  color: white;
+  border: 1px solid rgb(104, 102, 101);
+  background-color: transparent;
+}
+.nav-bar ul li .btn:hover{
+  background-color: rgb(252, 91, 4);
+}
+
+.rechercher {
+  display: flex;
+}
+.rechercher input{
+  color: white;
+  background-color: transparent;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: rgb(252, 91, 4);
+}
+.rechercher button{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: .6em;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(252, 91, 4);
+  border-color: rgb(252, 91, 4);
+  margin-left: -30px;
+  border-radius: 15px 0 15px 0px;
+}
+
+
+
+
+/*  -----------------------------------
+*        Body        */
+.body-comp{
+  display: flex;
+  margin-right: 15px;
+}
+
+
+
+/*  --------------------------------
+*                 Compétences */
+.competence{
+  width: 70%;
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+.competence span{
+  color: rgb(252, 91, 4);
+}
+.competence p{
+  font-weight: 200;
+  margin: 0;
+  font-size: 15px;
+}
+.competence .bt-join{
+  margin-top: -20px;
+}
+.competence .bt-join button{
+  width: 140px;
+  height: 30px;
+  font-weight: 900;
+  margin-left: 30px;
+  font-size: .27em;
+  background-color: rgb(252, 91, 4);
+  border: none;
+  border-radius: 5px;
+}
+.competence .bt-join button:hover{
+  color: white;
+  background-color: rgb(76, 73, 73);
+}
+
+
+/* -------------------------------- 
+*            Formulaire de connection */
+.form{
+  display: none;
+  color: white;
+  justify-content: center;
+  background-color: black;
+  margin-top: 50px;
+  margin-right: 15px;
+  border-radius: 20px;
+}
+form{
+  display:  block;
+}
+/* form{
+  margin: 10px auto 0px auto;
+  width: 900;
+  text-align: left;
+} */
+.form .connect-here{
+  height: 25px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: .8em;
+  color: rgb(252, 91, 4);
+  font-weight: 800;
+  border-radius: 5px;
+  background-color: white;
+}
+.form .donne-form{
+  display: grid;
+  margin: 15px;
+  margin-top: 25px;
+}
+.form .donne-form input{
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(246, 121, 54);
+  margin-bottom: 15px;
+}
+.form .donne-form button{
+  height: 30px;
+  border-radius: 5px;
+  font-weight: 800;
+  background-color: rgb(252, 91, 4);
+}
+.form .no-compte{
+  display: grid;
+  text-align: center;
+}
+.form .no-compte span{
+  font-size: .8em;
+}
+.form .no-compte a{
+  text-decoration: none;
+  font-size: .5em;
+  color: rgb(252, 91, 4);
+}
+.form .connect-avec{
+  margin-top: 5px;
+  text-align: center;
+  font-size: .4em
+}
+.form .link-connect{
+    display: flex;
+}
+
