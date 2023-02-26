@@ -9,7 +9,7 @@
   <title>Mon site</title>
 </head>
 <body>
-  <header>
+  <header>  
     <div class="nav-bar">
       <ul>
         <li class="logo"><a href="#">OVISION</a></li>
@@ -24,38 +24,67 @@
         </li>
         <li class="disposit-btn">
           <button class="btn" id="Inscription">Inscription</button>
-          <button class="btn">Connection</button>
+          <button class="btn" id="Connexion">Connection</button>
         </li>
       </ul>
     </div>
   </header>
+  <div class="mousemove"></div>
   <div class="body-comp">
     <div class="competence">
       <div>Web Design & <br> <span>Mobile Developper</span></div>
       <p>Développement d'application et de site web et mobile. <br>Web Design et Design graphique </p>
       <div  class="bt-join"><button>NOUS JOINDRE</button></div>
+      <div class="music-contener">
+          <div></div>
+          <button class="jouer">Jouer Music</button>
+      </div>
     </div>
-    <div class="form" id="form">
-      <form action="">
-        <div class="connect-here">Connecter Ici</div>
-        <div class="donne-form">
-          <input type="text" placeholder="Entrer votre email ici">
-          <input type="password" placeholder="Entrer votre mot de passe">
-          <button type="submit">Connecter</button>
-        </div>
-        <div class="no-compte">
-            <span>Pas de compte ? </span>
-            <a href="#">Inscrivez vous ici</a>
-        </div>
-        <div class="connect-avec">Connecter avec</div>
-        <div class="link-connect">
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-        </div>
-      </form>
+    <div class="content-form">
+      <div class="form" id="form-connexion">
+        <form action="">
+          <div class="connect-here">Connecter Ici</div>
+          <div class="donne-form">
+            <input type="text" placeholder="Entrer votre email ici">
+            <input type="password" placeholder="Entrer votre mot de passe">
+            <button type="submit">Connecter</button>
+          </div>
+          <div class="no-compte">
+              <span>Pas de compte ? </span>
+              <button class="form-button2" id="form-inscription2">Inscrivez vous ici</button>
+          </div>
+          <div class="connect-avec">Connecter avec</div>
+          <div class="link-connect">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </form>
+      </div>
+
+      <div class="form form2" id="form-inscription">
+        <form action="">
+          <div class="connect-here">Inscrivez Ici</div>
+          <div class="donne-form">
+            <input type="text" placeholder="Entrer votre email ici">
+            <input type="password" placeholder="Entrer votre mot de passe">
+            <button type="submit">S'inscrire</button>
+          </div>
+          <div class="no-compte">
+              <span>Avez déjà un compte ? </span>
+              <button class="form-button2" id="form-connexion2">Connecter vous ici</button>
+          </div>
+          <div class="connect-avec">Connecter avec</div>
+          <div class="link-connect">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </form>
+      </div>
     </div>
-</div>
+  </div>
 </body>
 </html>
