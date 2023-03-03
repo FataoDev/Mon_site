@@ -51,3 +51,25 @@ const music=document.querySelector(".jouer");
 music.addEventListener('click',()=>{
     jouer();
 })
+
+const form11=document.querySelector("#form11");
+form11.addEventListener('submit', (e)=>{
+    if(cgu11.checked){
+
+    }
+    else{
+        e.preventDefault();
+        document.querySelector(".cgu-nonaccept11").classList.add("aff-cgu-nonaccept");
+    }
+})
+
+const form22=document.querySelector("#form22");
+form22.addEventListener('submit', (e)=>{
+    if(cgu22.checked){
+
+    }
+    else{
+        e.preventDefault();
+        document.querySelector(".cgu-nonaccept22").classList.add("aff-cgu-nonaccept");
+    }
+})

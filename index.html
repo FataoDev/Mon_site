@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/828869048c.js" crossorigin="anonymous"></script>
   <title>Mon site</title>
 </head>
 <body>
@@ -23,8 +24,8 @@
           <button>Rechercher</button>
         </li>
         <li class="disposit-btn">
-          <button class="btn" id="Inscription">Inscription</button>
-          <button class="btn" id="Connexion">Connection</button>
+          <button class="btn" id="Inscription">S'Inscrire</button>
+          <button class="btn" id="Connexion">Se Connecter</button>
         </li>
       </ul>
     </div>
@@ -37,52 +38,76 @@
       <div  class="bt-join"><button>NOUS JOINDRE</button></div>
       <div class="music-contener">
           <div></div>
-          <button class="jouer">Jouer Music</button>
+          <button class="jouer">
+            <i class="fa-solid fa-music"></i>
+            Jouer Music</button>
       </div>
     </div>
     <div class="content-form">
       <div class="form" id="form-connexion">
-        <form action="">
+        <form action="" id="form11">
           <div class="connect-here">Connecter Ici</div>
           <div class="donne-form">
-            <input type="text" placeholder="Entrer votre email ici">
-            <input type="password" placeholder="Entrer votre mot de passe">
+            <div class="user-name">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Entrer votre email ici">
+            </div>
+            <div class="passwd"> 
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Entrer votre mot de passe">
+            </div>
+            <div class="cgu-contener">
+              <input type="checkbox" id="cgu11">
+              <label for="cgu11" class="cgu11">Accepter les condition d'utilisation</label>
+          </div>
+          <div class="cgu-nonaccept11">Veuillez accepter les condition d'utilisation</div>
             <button type="submit">Connecter</button>
           </div>
-          <div class="no-compte">
-              <span>Pas de compte ? </span>
-              <button class="form-button2" id="form-inscription2">Inscrivez vous ici</button>
-          </div>
-          <div class="connect-avec">Connecter avec</div>
-          <div class="link-connect">
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-          </div>
         </form>
+        <div class="no-compte">
+          <span>Pas de compte ? </span>
+            <button class="form-button2" id="form-inscription2">Inscrivez vous ici</button>
+          </div>
+        <div class="connect-avec">Connecter avec</div>
+        <div class="link-connect">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
       </div>
 
       <div class="form form2" id="form-inscription">
-        <form action="">
+        <form action="" id="form22">
           <div class="connect-here">Inscrivez Ici</div>
           <div class="donne-form">
-            <input type="text" placeholder="Entrer votre email ici">
-            <input type="password" placeholder="Entrer votre mot de passe">
+            <div class="user-name">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Entrer votre email ici">
+            </div>
+            <div class="passwd"> 
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Entrer votre mot de passe">
+            </div>
+            <div class="cgu-contener">
+              <input type="checkbox" id="cgu22">
+              <label for="cgu22" class="cgu22">Accepter les condition d'utilisation</label>
+          </div>
+          <div class="cgu-nonaccept22">Veuillez accepter les condition d'utilisation</div>
             <button type="submit">S'inscrire</button>
           </div>
-          <div class="no-compte">
-              <span>Avez déjà un compte ? </span>
-              <button class="form-button2" id="form-connexion2">Connecter vous ici</button>
-          </div>
-          <div class="connect-avec">Connecter avec</div>
-          <div class="link-connect">
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-          </div>
         </form>
+        <div class="no-compte">
+          <span>Avez déjà un compte ? </span>
+          <button class="form-button2" id="form-connexion2">Connecter vous ici</button>
+        </div>
+        <div class="connect-avec">Connecter avec</div>
+        <div class="link-connect">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
       </div>
     </div>
   </div>
